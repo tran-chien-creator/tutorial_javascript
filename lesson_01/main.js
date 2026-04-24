@@ -28,3 +28,34 @@ console.log(myName);
 myName = prompt("Vui lòng nhập vào tên đầy đủ của bạn");
 console.log(myName);
 console.log("Chào mừng " + myName + " đã đến với lộ trình học JS!");
+
+// Primitive Data types
+// String
+var myString = "Hello World";
+// Number
+var numberInt = 19;
+var numberFloat = 2.3;
+// Boolean
+var isInt = true;
+console.log(typeof myString);
+console.log(typeof numberInt);
+console.log(typeof numberFloat);
+console.log(typeof isInt);
+
+// undefined
+var c = undefined;
+// Null
+var ageLuxury = null;
+
+// Các cách xuất dữ liệu
+let a = 5,
+  b = 5,
+  result = a * b;
+// Cách 1
+console.log("Kết quả của phép nhân " + a + " và " + b + " là: " + result);
+// Cách 2:
+console.log("Kết quả của phép nhân", a, "và", b, "là:", result);
+// Cách 3
+console.log(`Kết quả của phép nhân ${a} và ${b} là: ${result}`);
+// Cách 4:
+console.log(`Kết quả của phép nhân %s và %s là: %s`, a, b, result);
