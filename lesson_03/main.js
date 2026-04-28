@@ -110,3 +110,20 @@ var pointEnglish = Number(prompt("Vui lòng nhập vào điểm tiếng anh củ
 var pointSvg = ((pointMath + pointLiterature + pointEnglish) / 3).toFixed(2);
 
 alert(`Điểm trung bình của bạn là ${pointSvg} `);
+
+// Các toán tử so sánh
+console.log(`So sánh:`);
+console.log(5 > 3); // True
+console.log(5 < 3); // False
+console.log(5 >= 3); // True
+console.log(5 <= 3); // False
+console.log(5 == 3); // False
+console.log(`Chuỗi "5" bằng Số 5 với phép == sẽ trả về = `);
+console.log("5" == 5); //True
+console.log(`Chuỗi "5" bằng Số 5 với phép === sẽ trả về = `);
+console.log("5" === 5); //False
+console.log(5 != 3); // True
+console.log(`Chuỗi "5" bằng Số 5 với phép != sẽ trả về = `);
+console.log("5" != 5); //False
+console.log(`Chuỗi "5" bằng Số 5 với phép !== sẽ trả về = `);
+console.log("5" !== 5); //True
