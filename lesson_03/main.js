@@ -127,3 +127,99 @@ console.log(`Chuỗi "5" bằng Số 5 với phép != sẽ trả về = `);
 console.log("5" != 5); //False
 console.log(`Chuỗi "5" bằng Số 5 với phép !== sẽ trả về = `);
 console.log("5" !== 5); //True
+
+// 1 số hàm toán học có sẵn
+
+// Hàm căn bậc 2 (square root)
+var soA = 25,
+  soB = 16,
+  soC = -10,
+  soD = 5.2,
+  soE = 5.5,
+  soF = 5.4;
+console.log("Hàm căn bậc 2", Math.sqrt(soA), Math.sqrt(soB));
+
+// Hàm mũ
+console.log("Hàm mũ", Math.pow(soA, 2), Math.pow(soB, 2));
+
+// Hàm giá trị tuyệt đối (Absolute)
+console.log("Hàm trị tuyệt đối", Math.abs(soC));
+
+// Hàm làm tròn lên và làm tròn xuống
+console.log("Hàm làm tròn lên ceil", Math.ceil(soD));
+console.log("Hàm làm tròn xuống floor", Math.floor(soD));
+
+// Hàm làm tròn theo ngưỡng 0.5
+console.log("Hàm làm tròn theo ngưỡng >= 0.5", Math.round(soE));
+console.log("Hàm làm tròn theo ngưỡng < 0.5", Math.round(soF));
+
+// Hàm min và hàm max
+console.log(
+  "Số nhỏ nhất trong dãy",
+  soA,
+  soB,
+  soC,
+  soD,
+  soE,
+  soF,
+  "là:",
+  Math.min(soA, soB, soC, soD, soE, soF),
+);
+console.log(
+  "Số lớn nhất trong dãy",
+  soA,
+  soB,
+  soC,
+  soD,
+  soE,
+  soF,
+  "là:",
+  Math.max(soA, soB, soC, soD, soE, soF),
+);
+
+// Hàm tạo số ngẫu nhiên
+var ramdomValueNumber = Math.random();
+console.log("Lấy số ngẫu nhiên từ 0 đến sát 1:", ramdomValueNumber);
+// Lấy số lớn hơn 1
+var ramdomValueNumber2 = Math.random() * 10;
+console.log("Lấy số ngẫu nhiên từ 1 đến sát 10:", ramdomValueNumber2);
+//Lấy số nguyên
+var ramdomValueNumber3 = parseInt(Math.random() * 10);
+console.log("Lấy số nguyên ngẫu nhiên từ 1 đến sát 10:", ramdomValueNumber3);
+//Lấy số từ 0 đến sát 30
+var ramdomValueNumber4 = parseInt(Math.random() * 30);
+console.log("Lấy số nguyên ngẫu nhiên từ 1 đến sát 30:", ramdomValueNumber4);
+
+//Lấy số từ 10 đến sát 30
+var ramdomValueNumber5 = parseInt(Math.random() * 20) + 10;
+console.log("Lấy số nguyên ngẫu nhiên từ 10 đến sát 30:", ramdomValueNumber5);
+
+// Hàm Number, isNaN , Number.isNaN
+var str = "123";
+console.log(typeof str);
+var pasreNumber = Number(str);
+console.log(typeof pasreNumber);
+
+var invalidNumber = "aaa";
+console.log(typeof invalidNumber);
+var pasreNumber2 = Number(invalidNumber);
+console.log(pasreNumber2);
+
+// Hàm kiểm tra xem có phải là Not a number không
+console.log(isNaN(pasreNumber)); //False vì nó trả về giá trị Number
+console.log(isNaN(pasreNumber2)); //True vì nó trả về giá trị là NaN
+//Đặt biệt với giá trị true
+// var parseTrue = Number(true); // Nhận giá trị là 1 => Giá trị Number
+// console.log(parseTrue);
+console.log(isNaN(true)); //False vì giá trị là 1 kiểu số
+
+var parseUndifined = Number(undefined);
+console.log(parseUndifined);
+
+console.log(Number.isNaN(NaN)); // True
+console.log(Number.isNaN(0 / 0)); // True
+
+console.log(Number.isNaN("AAA")); // False
+console.log(Number.isNaN(true)); //False
+console.log(Number.isNaN(null)); //False
+console.log(Number.isNaN(undefined)); //False
